@@ -1,0 +1,207 @@
+ /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+ 
+ body {
+     padding-top: 60px;
+     padding-bottom: 40px;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100%;
+     margin: 0;
+     min-height: 100vh;
+     padding: 0;
+     width: 100%;
+ }
+ 
+ .container {
+     width: 80%;
+     margin: 0 auto;
+     /* Center the DIV horizontally */
+ }
+ 
+ .fixed-header,
+ .fixed-footer {
+     width: 100%;
+     position: fixed;
+     background: #333;
+     padding: 10px 0;
+     color: #fff;
+ }
+ 
+ .fixed-header {
+     top: 0;
+ }
+ 
+ .fixed-footer {
+     bottom: 0;
+ }
+ /* Some more styles to beutify this example */
+ 
+ nav a {
+     color: #fff;
+     text-decoration: none;
+     padding: 7px 25px;
+     display: inline-block;
+ }
+ 
+ .container p {
+     line-height: 200px;
+     /* Create scrollbar to test positioning */
+ }
+ /* ------------------------ CSS Testimonial Page  -------------------------- */
+ 
+ .testimonial {
+     margin: 0 20px 40px;
+ }
+ 
+ .testimonial .testimonial-content {
+     padding: 35px 25px 35px 50px;
+     margin-bottom: 35px;
+     position: relative;
+ }
+ 
+ .testimonial .testimonial-content:before {
+     content: "";
+     position: absolute;
+     bottom: -30px;
+     left: 0;
+     border-top: 15px solid #718076;
+     border-left: 15px solid transparent;
+     border-bottom: 15px solid transparent;
+ }
+ 
+ .testimonial .testimonial-content:after {
+     content: "";
+     position: absolute;
+     bottom: -30px;
+     right: 0;
+     border-top: 15px solid #718076;
+     border-right: 15px solid transparent;
+     border-bottom: 15px solid transparent;
+ }
+ 
+ .testimonial-content .testimonial-icon {
+     width: 50px;
+     height: 45px;
+     background: #0CCA4A;
+     text-align: center;
+     font-size: 22px;
+     color: #fff;
+     line-height: 42px;
+     position: absolute;
+     top: 37px;
+     left: -19px;
+ }
+ 
+ .testimonial-content .testimonial-icon:before {
+     content: "";
+     border-bottom: 16px solid #05A739;
+     border-left: 18px solid transparent;
+     position: absolute;
+     top: -16px;
+     left: 1px;
+ }
+ 
+ .testimonial .description {
+     font-size: 15px;
+     font-style: italic;
+     color: #000000;
+     line-height: 23px;
+     margin: 0;
+ }
+ 
+ .testimonial .title {
+     display: block;
+     font-size: 18px;
+     font-weight: 700;
+     color: #ffffff;
+     text-transform: capitalize;
+     letter-spacing: 1px;
+     margin: 0 0 5px 0;
+ }
+ 
+ .testimonial .post {
+     display: block;
+     font-size: 14px;
+     color: #0CCA4A;
+ }
+ 
+ .owl-theme .owl-controls {
+     margin-top: 20px;
+ }
+ 
+ .owl-theme .owl-controls .owl-page span {
+     background: #ccc;
+     opacity: 1;
+     transition: all 0.4s ease 0s;
+ }
+ 
+ .owl-theme .owl-controls .owl-page.active span,
+ .owl-theme .owl-controls.clickable .owl-page:hover span {
+     background: #0CCA4A;
+ }
+ 
+ .owl-carousel {
+     margin: auto;
+     width: 50vw;
+     height: 50vw;
+ }
+ /* ------------------------ CSS Testimonial Page END -------------------------- */
+ /* ------------------------ CSS About US Page -------------------------- */
+ 
+ .about-section {
+     padding: 50px;
+     text-align: center;
+     color: white;
+ }
+ 
+ .flex-container {
+     height: 300px;
+     padding: 0;
+     margin: 0;
+     display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .flex-item {
+     padding: 5px;
+     height: 300px;
+     width: 250px;
+     margin: 10px;
+     line-height: 20px;
+     color: white;
+     font-weight: bold;
+     font-size: 2em;
+     text-align: center;
+     margin: 15px;
+     display: inline-block;
+     border: 1px solid #ccc;
+     box-shadow: 0px 5px 25px #aaa;
+     border-radius: 10px;
+ }
+ 
+ .text,
+ .title {
+     color: white;
+     font-size: 16px;
+     text-align: left;
+ }
+ 
+ .nameHeader {
+     color: white;
+     font-size: 20px;
+     text-align: left;
+ }
+ 
+ .container::after {
+     content: "";
+     clear: both;
+     display: table;
+ }
+ /* ------------------------ CSS About US Page END -------------------------- */

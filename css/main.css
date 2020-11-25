@@ -1,0 +1,950 @@
+@charset "UTF-8";
+* {
+    font-family: Pacifico;
+}
+
+body {
+    /* background: url(../img/rudolf.jpg); */
+    background-color: powderblue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+    width: 100%;
+}
+
+.weblogo {
+    background: url("/img/PuppyLogo.png") center no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    display: inline-block;
+    height: 100px;
+    text-align: center;
+    width: 100px;
+}
+
+.container-media {
+    bottom: 0;
+    padding-right: 10%;
+    position: absolute;
+    right: 0;
+}
+
+.container-media .fa-circle {
+    color: transparent;
+}
+
+.container-media .fa:hover {
+    color: white;
+}
+
+.titles {
+    color: black;
+    letter-spacing: 3px;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: 1px 1px 0 black;
+    width: 50vw;
+}
+
+.titles h1 {
+    font-size: 5rem;
+}
+
+.titles p {
+    margin-top: 25px;
+}
+
+
+/* ------------------------ CSS Footer Start -------------------------- */
+
+.MainFooter {
+    display: flex;
+    margin-top: 20px;
+    background-color: whitesmoke;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* ------------------------ CSS Footer END -------------------------- */
+
+
+/* ------------------------ CSS Header Start -------------------------- */
+
+.navbar {
+    margin: 0 auto;
+    max-width: -webkit-fit-content;
+}
+
+.navbar-nav {
+    display: block;
+    padding-inline-start: 50px;
+}
+
+.navbar-nav .nav-item {
+    color: white;
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+    text-align: left;
+}
+
+.navbar-nav .nav-item .nav-link {
+    background: black;
+    border-radius: 5px;
+    color: white;
+    opacity: 0.3;
+    padding: 10px 20px 10px 20px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background: black;
+    color: white;
+    opacity: 1;
+}
+
+.nav-dropdown {
+    padding: 0;
+    position: absolute;
+    z-index: 100;
+}
+
+.nav-dropdown .drop-item {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.nav-dropdown .drop-item {
+    display: none;
+}
+
+.navbar-nav .nav-item:hover .nav-dropdown .drop-item {
+    display: block;
+}
+
+
+/* ------------------------ CSS Header END -------------------------- */
+
+
+/* ------------------------ CSS Index Home Start -------------------------- */
+
+.mySlides1,
+.mySlides2 {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a grey background color */
+
+.prev:hover,
+.next:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+
+/* Style the body */
+
+
+/* Header/logo Title */
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #70C4CD;
+    color: white;
+}
+
+
+/* Increase the font size of the heading */
+
+.header h1 {
+    font-size: 40px;
+}
+
+
+/* Style the top navigation bar */
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+}
+
+
+/* Create two unequal columns that sits next to each other */
+
+
+/* Sidebar/left column */
+
+.side {
+    -ms-flex: 30%;
+    /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+
+/* Main column */
+
+.main {
+    -ms-flex: 70%;
+    /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+
+/* Fake image, just for this example */
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+}
+
+.btnsignup {
+    background-color: green;
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+/* Add a background color when the inputs get focus */
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for all buttons */
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 12px;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+
+/* Float cancel and signup buttons and add an equal width */
+
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: powderblue;
+    padding-top: 50px;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* Style the horizontal ruler */
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+
+/* Clear floats */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+
+@media screen and (max-width: 300px) {
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+/* ------------------------ CSS Index Home End  -------------------------- */
+
+
+/* ------------------------ CSS Puppy Care Start  -------------------------- */
+
+
+/* Header/Blog Title */
+
+.headerText {
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+    color: black;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+
+
+/* Left column */
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+
+/* Right column */
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+
+/* Fake image */
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* Add a card effect for articles */
+
+.card {
+    background-color: whitesmoke;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.card-body {
+    background-color: whitesmoke;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+.card-header {
+    background-color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
+#more {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+/* ------------------------ CSS Puppy Care END  -------------------------- */
+
+
+/* ------------------------ CSS Testimonial Start  -------------------------- */
+
+.checked {
+    color: orange;
+}
+
+#testimonial .mycard {
+    border-radius: 20px;
+    min-height: 100%;
+    background: whitesmoke
+}
+
+#testimonial .heading-border {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+}
+
+#testimonial .mycard .user-picture img {
+    position: absolute;
+    top: -20%;
+    right: 10%;
+    background: whitesmoke !important;
+    padding: 10px;
+}
+
+#testimonial .mycard .user-content .user-name {
+    margin-right: 150px;
+}
+
+
+/* ------------------------ CSS Testimonial END -------------------------- */
+
+
+/* ------------------------ CSS Contact US Start -------------------------- */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    top: 100px;
+    border-radius: 12px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+.label,
+.contact-us-section {
+    text-align: center;
+    color: black;
+}
+
+
+/* ------------------------ CSS Contact US END -------------------------- */
+
+
+/* ------------------------ CSS About US Start -------------------------- */
+
+.about-section {
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+.flex-container {
+    height: 300px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-item {
+    padding: 5px;
+    height: 300px;
+    width: 250px;
+    margin: 10px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    margin: 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: 0px 5px 25px #aaa;
+    border-radius: 10px;
+}
+
+.text,
+.title {
+    color: black;
+    font-size: 16px;
+    text-align: left;
+}
+
+.nameHeader {
+    color: black;
+    font-size: 20px;
+    text-align: left;
+}
+
+
+/* ------------------------ CSS About US END -------------------------- */
+
+
+/* ------------------------ CSS Our Puppies Start -------------------------- */
+
+.center {
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+}
+
+.our-pet-card {
+    width: 580px;
+    height: 500px;
+    background-color: #fff;
+    background: linear-gradient(#f8f8f8, #fff);
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5rem;
+}
+
+.our-pet-card h1 {
+    text-align: center;
+}
+
+.our-pet-card .additional {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(#000000, #A2CCB6);
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.our-pet-card.green .additional {
+    background: linear-gradient(#92bCa6, #A2CCB6);
+}
+
+.our-pet-card:hover .additional {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.our-pet-card .additional .user-card {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+.our-pet-card .additional .user-card::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10%;
+    right: -2px;
+    height: 80%;
+    border-left: 2px solid rgba(0, 0, 0, 0.025);
+}
+
+.our-pet-card .additional .user-card .level,
+.our-pet-card .additional .user-card .points {
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+.our-pet-card .additional .user-card .points {
+    top: 85%;
+}
+
+.points {
+    margin-top: 10px;
+}
+
+.our-pet-card .additional .user-card svg {
+    top: 50%;
+}
+
+.our-pet-card .additional .more-info {
+    width: 300px;
+    float: left;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+}
+
+.our-pet-card .additional .more-info h1 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.our-pet-card.green .additional .more-info h1 {
+    color: #224C36;
+}
+
+.our-pet-card .additional .coords {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.our-pet-card.green .additional .coords {
+    color: #325C46;
+}
+
+.our-pet-card .additional .coords span+span {
+    float: right;
+}
+
+.our-pet-card .additional .stats {
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
+}
+
+.our-pet-card.green .additional .stats {
+    color: #325C46;
+}
+
+.our-pet-card .additional .stats>div {
+    flex: 1;
+    text-align: center;
+}
+
+.our-pet-card .additional .stats i {
+    display: block;
+}
+
+.our-pet-card .additional .stats div.title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.our-pet-card .additional .stats div.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.our-pet-card .additional .stats div.value.infinity {
+    font-size: 2.5rem;
+}
+
+.our-pet-card .general {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.our-pet-card .general .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+}
+
+.btnBuyDog {
+    background-color: #1b9c42;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.btnBuyDog {
+    border-radius: 12px;
+}
+
+.btnBuyDog::hover {
+    opacity: 1
+}
+
+.geeks {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.geeks img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.geeks:hover img {
+    transform: scale(1.5);
+}
+
+
+/* ------------------------ CSS Our Puppies END -------------------------- */
+
+* Basic button style */ .btn {
+    box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
+    border-radius: 3px;
+    border: 1px solid;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 8px;
+    position: relative;
+    font-size: 12px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+
+/*
+ * Counter button style
+ */
+
+.btn-counter {
+    margin-right: 39px;
+}
+
+.btn-counter:after,
+.btn-counter:hover:after {
+    text-shadow: none;
+}
+
+.btn-counter:after {
+    border-radius: 3px;
+    border: 1px solid #d3d3d3;
+    background-color: #eee;
+    padding: 0 8px;
+    color: #777;
+    content: attr(data-count);
+    left: 100%;
+    margin-left: 8px;
+    margin-right: -13px;
+    position: absolute;
+    top: -1px;
+}
+
+.btn-counter:before {
+    transform: rotate(45deg);
+    filter: progid: DXImageTransform.Microsoft.Matrix(M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476, sizingMethod='auto expand');
+    background-color: #eee;
+    border: 1px solid #d3d3d3;
+    border-right: 0;
+    border-top: 0;
+    content: '';
+    position: absolute;
+    right: -13px;
+    top: 5px;
+    height: 6px;
+    width: 6px;
+    z-index: 1;
+    zoom: 1;
+}
+
+
+/*
+ * Custom styles
+ */
+
+.btn {
+    background-color: #dbdbdb;
+    border-color: #bbb;
+    color: #666;
+}
+
+.btn:hover,
+.btn.active {
+    text-shadow: 0 1px 0 #b12f27;
+    background-color: #f64136;
+    border-color: #b12f27;
+}
+
+.btn:active {
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2) inset;
+}
+
+.btn span {
+    color: #f64136;
+}
+
+.btn:hover,
+.btn:hover span,
+.btn.active,
+.btn.active span {
+    color: #eeeeee;
+}
+
+.btn:active span {
+    color: #b12f27;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
