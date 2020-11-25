@@ -16,7 +16,7 @@
 
     <?php include 'header.html'; ?>
     <div class="about-section">
-        <h1>About Us Page</h1>
+        <h1>Our Story</h1>
         <p>All our dogs are born, raised and live in our house as a part of our family, kenneling dogs is against our philosophy
             of dog ownership. Our hounds have 24 hours a day access to the one acre-big securely fenced back yard via a dog door
             and they all live as one pack. That’s why, when breeding, we pay close attention to producing happy, friendly dogs with
@@ -28,7 +28,6 @@
             and they all live as one pack. That’s why, when breeding, we pay close attention to producing happy, friendly dogs with
             easy-going temperaments. Health issues are of paramount importance for us too and we do careful health evaluation of our
             breeding stock that includes DNA testing for breed-specific disorders.</p>
-
     </div>
 
     <h2 class="titles">Our Team</h2>

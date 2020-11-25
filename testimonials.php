@@ -20,10 +20,7 @@
         <!-- Ui cards -->
         <section id="testimonial">
             <div class="container py-2">
-                <div class="row pb-4">
-                    <div class="col-12 text-center">
-                        <div class="display-3">Our Testimonials</div>
-                    </div>
+                <div class="headerTestimony">
                 </div>
                 <!-- cards -->
                 <div class="row">
