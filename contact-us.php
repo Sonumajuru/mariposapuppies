@@ -29,24 +29,25 @@
         <img src="/img/call-us.png" style="width:100%">
       </div>
       <div class="column">
-        <form method="post" action="contact.php">
+        <!-- <form method="post" action="contact.php"> -->
+        <form method="post" action="contact-email.php">
           <label class="label for=" fname">Name</label><label class="star">*</label>
-          <input type="text" id="fname" name="name" placeholder="Your name.." required>
+          <input type="text" id="fname" name="Name" placeholder="Your name.." required>
           <label class="label for=" lname">Email address</label><label class="star">*</label>
-          <input type="text" id="email" name="email" placeholder="Contact email address.." required>
+          <input type="text" id="email" name="Email" placeholder="Contact email address.." required>
           <label class="label for=" fname">Phone number</label><label class="star">*</label>
-          <input type="text" id="pnumber" name="number" placeholder="Contact number.." required>
+          <input type="text" id="pnumber" name="Number" placeholder="Contact number.." required>
           <label class="label for=" country">Country</label><label class="star">*</label>
-          <select id="country" name="country" required>
+          <select id="country" name="Country" required>
             <option value="">Select Country</option>
             <option value="australia">Australia</option>
             <option value="canada">Canada</option>
             <option value="usa">USA</option>
           </select>
           <label class="label for=" fname">Delivery Address</label><label class="star">*</label>
-          <input type="text" id="daddress" name="address" placeholder="Complete delivery address.." required>
+          <input type="text" id="daddress" name="Address" placeholder="Complete delivery address.." required>
           <label class="label for=" puppy">Puppy</label><label class="star">*</label>
-          <select id="puppy" name="puppy" required>
+          <select id="puppy" name="Puppy" required>
             <option value="">Choose puppy</option>
             <option value="avalanche">Avalanche</option>
             <option value="fargo">Fargo</option>
@@ -64,12 +65,13 @@
             <option value="pitbull">Pitbull</option>
           </select>
           <label class="label for=" subject">Subject</label><label class="star">*</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
+          <textarea id="subject" name="Message" placeholder="Write something.." style="height:170px" required></textarea>
           <input type="submit" value="Submit">
         </form>
       </div>
     </div>
   </div>
+
 
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">

@@ -64,20 +64,21 @@
 
                 <div id="id01" class="modal">
                     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                    <form class="modal-content" method="post" action="subscribe.php">
+                    <!-- <form class="modal-content" method="post" action="subscribe.php"> -->
+                    <form class="modal-content" method="post" action="subscribe-email.php">
                         <div class="container">
                             <h1>Subscribe Now</h1>
                             <p>Please fill in this form to get the latest updates about our newest available puppies.</p>
                             <hr>
                             <label for="email"><b>Email</b></label>
-                            <input type="text" placeholder="Enter Email" name="email" required>
+                            <input type="text" placeholder="Enter Email" name="Email" required>
                             <span class="text-danger hidden" id="emailError"></span>
 
                             <label for="psw"><b>Password</b></label>
-                            <input type="password" placeholder="Enter Password" name="password" required>
+                            <input type="password" placeholder="Enter Password" name="Password" required>
 
                             <label for="psw-repeat"><b>Repeat Password</b></label>
-                            <input type="password" placeholder="Repeat Password" name="pswrepeat" required>
+                            <input type="password" placeholder="Repeat Password" name="PswRepeat" required>
 
                             <label>
                                 <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
