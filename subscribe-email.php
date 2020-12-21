@@ -65,12 +65,9 @@ if (isset($_POST['Email'])) {
         'Reply-To: ' . $email . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
     @mail($email_to, $email_subject, $email_message, $headers);
+    echo ("<script>alert('Thank you for subscribing to Mariposa Puppies!')</script>");
+    echo ("<script>window.location = 'index.php';</script>");
 ?>
-
-    <!-- include your success message below -->
-
-    Thank you for subscribing to Mariposa Puppies. We will make sure to keep you updated with our newest puppies.
-
 <?php
 }
 ?>

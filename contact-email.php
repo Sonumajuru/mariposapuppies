@@ -77,12 +77,9 @@ if (isset($_POST['Email'])) {
         'Reply-To: ' . $email . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
     @mail($email_to, $email_subject, $email_message, $headers);
+    echo ("<script>alert('Mail Sent. Thank you " . $first_name . ", we will contact you shortly.!')</script>");
+    echo ("<script>window.location = 'index.php';</script>");
 ?>
-
-    <!-- include your success message below -->
-
-    Thank you for contacting us. We will be in touch with you very soon.
-
 <?php
 }
 ?>

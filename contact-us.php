@@ -30,7 +30,7 @@
       </div>
       <div class="column">
         <!-- <form method="post" action="contact.php"> -->
-        <form method="post" action="contact-email.php">
+        <form method="post" action="contact-email.php" value="<?php echo $_SERVER["REQUEST_URI"]; ?>">
           <label class="label for=" fname">Name</label><label class="star">*</label>
           <input type="text" id="fname" name="Name" placeholder="Your name.." required>
           <label class="label for=" lname">Email address</label><label class="star">*</label>
